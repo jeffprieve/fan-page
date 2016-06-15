@@ -1,0 +1,28 @@
+body {
+    background-color: #E0F6F4;
+    color: #000000;
+}
+
+h1 {
+    background-color: #42E9BD;
+    color: #1609AB;
+}
+
+h2 {
+    color: #1609AB;
+}
+
+
+/*nav { background-color: #E2E2EF; }*/
+
+
+/*footer { color: #666666; }*/
+
+.gray {
+    color: #666666;
+}
+
+#new {
+    color: red;
+    font-weight: bold;
+}
