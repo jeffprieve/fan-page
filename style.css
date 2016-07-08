@@ -6,7 +6,7 @@ body {
 /*    background-image: linear-gradient(to bottom, #FFFFFF, #E0F6F4); */
     background-image: linear-gradient(to bottom, #FFFFFF, #0099CC); 
 }
-
+   
 body main {background-image: url(MorningFog.jpg);
            background-repeat: no-repeat;
            background-size: cover;
@@ -54,7 +54,6 @@ header {
 }
 
 h1 {
-    background-color: none;
     color: #CCFFFF;
     font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
     margin-top: 5px;
