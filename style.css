@@ -1,9 +1,21 @@
+header,
+main,
+nav,
+footer,
+section,
+article,
+figure,
+figcaption,
+aside {
+    display: block;
+}
+
+
 body {
     background-color: #E0F6F4;
     color: #FFFFFF;
     font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;
     text-align: center;
-/*    background-image: linear-gradient(to bottom, #FFFFFF, #E0F6F4); */
     background-image: linear-gradient(to bottom, #FFFFFF, #0099CC); 
 }
    
@@ -22,14 +34,11 @@ main {overflow: auto;
       }
 
 body main ul {list-style-type: none;
-              text-align: center;
-              list-style-image: url(Leaf.GIF);
+              text-align: left;
               }
 
-body p {background-color: #6699cc;
-        opacity: 0.6;
-        color: #000000;
-        font-weight: bold;
+
+body p { color: #FFFF00;
         padding: 3px;
         border-radius: 10px;
         text-align: left;
@@ -54,7 +63,7 @@ header {
 }
 
 h1 {
-    color: #CCFFFF;
+    color: #0066FF;
     font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
     margin-top: 5px;
     margin-bottom: 5px;
@@ -62,30 +71,29 @@ h1 {
 
 h2 {
     font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
-    color: #CCFFFF;
+    color: #0066FF;
     text-shadow: 0px 2px 0px #ccc;
 }
 
-h3 {text-transform: uppercase;}
-
-nav {float: left;
-     background-color: cornflowerblue;
-     padding-left: 1.5em;
-     padding-top:  1em;
-     padding-right: 1.5em;
-     padding-bottom: 1.5em;
-     }
+h3 {font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    color: #0066FF;
+}
+h4 {font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    color: #0066FF;
+    text-align: center;
+}
 
 nav a {color: #000000;
        text-decoration: none;
        font-size: 1.2em;
-       display: block;
+       display: inline;
+       margin: 7px;
 }
 
-nav a:link { color: #FFFFFF; }
-nav a:visited { color: #EAEAEA; }
-nav a:hover { color: #869DC7;
-             background-color: #EAEAEA; } 
+nav a:link { color: #0066FF; }
+nav a:visited { color: blue; }
+nav a:hover { color: deepskyblue;}
+    
 
 nav ul {
     text-decoration: none;
@@ -106,8 +114,7 @@ footer {
     color: blue;
 }
 
-figure {/*float: right;*/
-        width: 100px;
+figure {width: 100px;
         margin: 5px;
         padding-bottom: 4px;
         background-color: #33CCFF;
@@ -120,9 +127,10 @@ figcaption {text-align: center;
 }
 
 
-.gray {
-    color: #666666;
+.gray { color: #666666;
 }
+
+#ListStyle {list-style-type: circle; }
 
 #noListStyleImage {list-style-image: none;}
 
@@ -137,7 +145,7 @@ figcaption {text-align: center;
  }
 
 #weblink {
-    color: yellow;
+    color: deepskyblue;
     font-weight: bold;
     font-size: 120%;
 }
@@ -154,7 +162,6 @@ figcaption {text-align: center;
 
 #gallery li {
     display: inline;
-    /*float: left;*/
     padding: 10px;
 }
 
@@ -179,6 +186,110 @@ figcaption {text-align: center;
     left: 300px;
     text-align: center;
 }
+
+
+#mobile {
+    display: none;
+}
+
+#desktop {
+    display: inline;
+}
+
+
+@media only screen and (max-width: 64em) {
+    body {
+        margin: 0;
+    }
+    #wrapper {
+        min-width: 0;
+        width: auto;
+    }
+
+    main {
+        margin-left: 0;
+        width: auto
+    }
+
+    nav li {
+        display: inline;
+        padding-top: .25em;
+        padding-bottom: .25em;
+        padding-right: .75em;
+        padding-left: .75em;
+    }
+    footer {
+        margin-left: 0;
+    }
+    
+    body main {
+           background-repeat: no-repeat;
+           background-size: cover;
+           background-position: center;
+           padding: 2em;
+           margin-top: 2em;
+    }
+    
+}
+
+
+@media only screen and (max-width: 37.5em) {
+    header {
+        padding-top: 1em;
+    }
+    main {
+        padding-top: 0.1em;
+        padding-bottom: 0.1em;
+        padding-left: 1em;
+        padding-right: 1em;
+        font-size: 90%;
+    }
+    
+    body main {
+           background-image: none;
+           padding: 2em;
+           margin-top: 1em;
+    }
+    
+    h1 {
+        font-size: 1.5em;
+    }
+    nav {
+        padding: 0;
+    }
+    nav li {
+        display: block;
+        margin: 0;
+        border-bottom: 2px solid #330000;
+    }
+    nav a {
+        display: block;
+    }
+    footer {
+        margin-left: 0;
+    }
+   
+    label {
+        float: none;
+        text-align: left;
+    }
+    
+    input[type="submit"] {
+        margin-left: 0px;
+    }
+   
+    
+    #mobile {
+        display: inline;
+    }
+    #desktop {
+        display: none;
+    }
+    #gallery {
+        display: none;
+    }
+}
+
 
 
 
